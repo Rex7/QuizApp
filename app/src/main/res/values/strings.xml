@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SimpleQuiz</string>
+    <string name="submit_quiz">Submit Quiz</string>
+    <string name="score">3</string>
+    <string name="outOf">10</string>
+    <string name="_divider">/</string>
+    <string name="enter_option_d">Enter Option D</string>
+    <string name="enter_option_c">Enter Option C</string>
+    <string name="enter_option_b">Enter Option B</string>
+    <string name="enter_option_a">Enter Option A</string>
+    <string name="enter_question">Enter Question</string>
+    <string name="enter_category">enter category</string>
+    <string name="its_not_object_oriented">Its Not Object Oriented</string>
+    <string name="its_procedural">Its Procedural</string>
+    <string name="its_object_oriented">Its Object Oriented</string>
+    <string name="result">Result</string>
+    <string-array name="category">
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+    </string-array>
+</resources>

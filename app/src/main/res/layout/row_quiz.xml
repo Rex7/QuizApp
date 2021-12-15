@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        app:cardUseCompatPadding="true"
+        app:cardElevation="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <RelativeLayout
+            android:id="@+id/relativeRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/question"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:textSize="21sp"
+            android:textColor="#0C4741"
+            android:layout_height="50dp" />
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_below="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/optionA"
+                android:textSize="18sp"
+                android:textColor="#95261E"
+                android:text="@string/its_not_object_oriented"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/optionB"
+                android:textSize="18sp"
+                android:textColor="#95261E"
+                android:text="@string/its_procedural"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/optionC"
+                android:textSize="18sp"
+                android:textColor="#95261E"
+                android:text="@string/its_object_oriented"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/optionD"
+                android:textSize="18sp"
+                android:textColor="#95261E"
+                android:text="@string/its_not_object_oriented"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+

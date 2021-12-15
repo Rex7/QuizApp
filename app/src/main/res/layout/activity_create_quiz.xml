@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="700dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardQuiz"
+        app:cardElevation="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="700dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/title_Create"
+                android:text="Create Quiz"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/teal_700"
+                android:textSize="28sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/category"
+                android:layout_centerHorizontal="true"
+                android:hint="@string/enter_category"
+                android:layout_width="350dp"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+               android:layout_below="@+id/title_Create"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/createQuestion"
+                android:gravity="center"
+                android:layout_below="@+id/category"
+                android:layout_margin="30dp"
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                android:hint="@string/enter_question"
+                android:textColor="#000"
+                android:layout_height="50dp" />
+                <EditText
+                    android:id="@+id/createOptionA"
+                    android:gravity="center"
+                    android:hint="@string/enter_option_a"
+                    android:layout_below="@+id/createQuestion"
+                    android:textColorHint="@color/teal_700"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="350dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/createOptionB"
+                    android:gravity="center"
+                    android:hint="@string/enter_option_b"
+                    android:layout_below="@+id/createOptionA"
+                    android:textColorHint="@color/teal_700"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="350dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/createOptionC"
+                    android:hint="@string/enter_option_c"
+                    android:gravity="center"
+                    android:layout_below="@+id/createOptionB"
+                    android:textColorHint="@color/teal_700"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="350dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/createOptionD"
+                    android:gravity="center"
+                    android:hint="@string/enter_option_d"
+                    android:layout_below="@+id/createOptionC"
+                    android:textColorHint="@color/teal_700"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"/>
+            <Spinner
+                android:id="@+id/answer"
+                android:layout_width="150dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/createOptionD"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/createButton"
+                android:layout_below="@+id/answer"
+                android:text="create quiZ"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
