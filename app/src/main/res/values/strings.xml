@@ -14,6 +14,8 @@
     <string name="its_procedural">Its Procedural</string>
     <string name="its_object_oriented">Its Object Oriented</string>
     <string name="result">Result</string>
+    <string name="what_is_java_known_for_and_where_it_is_used">What is java known for and where it is used ?</string>
+    <string name="category">Category</string>
     <string-array name="category">
         <item>a</item>
         <item>b</item>

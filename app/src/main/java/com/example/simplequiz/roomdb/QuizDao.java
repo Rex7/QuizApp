@@ -13,7 +13,7 @@ public interface QuizDao {
     @Insert
     public void insert(Quiz...quiz);
 
-    @SuppressWarnings(RoomWarnings.CURSOR_MISMATCH)
+
     @Query("select DISTINCT category from quiz order by id")
     public List<Quiz> getCategory();
     @Query("select * from quiz where category = :category")

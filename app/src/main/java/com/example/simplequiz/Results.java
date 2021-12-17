@@ -8,6 +8,7 @@ import android.util.Log;
 import android.widget.TextView;
 
 import com.example.simplequiz.roomdb.Quiz;
+import com.example.simplequiz.roomdb.QuizImp;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,14 +25,17 @@ public class Results extends AppCompatActivity {
         setContentView(R.layout.activity_results);
         score=findViewById(R.id.score);
         outOf=findViewById(R.id.totalScore);
-        HashMap<Integer,String> results= (HashMap<Integer, String>) getIntent().getExtras().get("hashmap");
-        ArrayList<Quiz> answerList =getIntent().getParcelableArrayListExtra("answerList");
+        String category= (String) getIntent().getExtras().get("category");
+        HashMap<Integer,String> results= (HashMap<Integer, String>) getIntent().getExtras().get("answerList");
+        ArrayList<Quiz> answerList = (ArrayList<Quiz>) QuizImp.getDatabase(getApplicationContext()).quizDao().getQuiz(category);
         outOf.setText(""+answerList.size());
 
         for (Map.Entry<Integer,String> entry : results.entrySet()) {
 
             Log.v("Results", "key" + entry.getKey() + ", Value = " + entry.getValue());
-          if( answerList.get(position).getAnswer().contains(entry.getValue())){
+
+
+            if( answerList.get(position).getAnswer().contains(entry.getValue())){
                 scoreValue++;
             }
             position++;

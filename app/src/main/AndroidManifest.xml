@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SimpleQuiz">
-        <activity android:name=".ListOfCategory"></activity>
+        <activity android:name=".category.ListOfCategory"/>
         <activity android:name=".CreateQuiz" />
         <activity android:name=".Results" />
         <activity android:name=".QuizSection" />
+        <activity android:name=".quiz.QuizUpdated"/>
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

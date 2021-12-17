@@ -1,4 +1,4 @@
-package com.example.simplequiz;
+package com.example.simplequiz.category;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.example.simplequiz.R;
 import com.example.simplequiz.roomdb.Quiz;
 import com.example.simplequiz.roomdb.QuizDao;
 import com.example.simplequiz.roomdb.QuizImp;

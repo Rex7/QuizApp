@@ -1,4 +1,4 @@
-package com.example.simplequiz;
+package com.example.simplequiz.category;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+
+import com.example.simplequiz.R;
+import com.example.simplequiz.quiz.QuizUpdated;
 import com.example.simplequiz.roomdb.Quiz;
 import com.example.simplequiz.roomdb.QuizDao;
 
@@ -58,9 +61,10 @@ public class CategoryRecyclerAdapter extends RecyclerView.Adapter<CategoryRecycl
             Log.v("UpdatedVal","clicked"+getAdapterPosition());
             String category=databaseHelper.getCategory().get(getAdapterPosition()).getCategory().toString();
             ArrayList<Quiz> quizList= (ArrayList<Quiz>) databaseHelper.getQuiz(category);
-            Intent intent=new Intent(ctx,QuizSection.class);
+            Intent intent=new Intent(ctx, QuizUpdated.class);
             Log.v("SizeValue","size"+quizList.size());
             intent.putParcelableArrayListExtra("listOfCategory", quizList);
+            intent.putExtra("category",category);
             ctx.startActivity(intent);
 
 
